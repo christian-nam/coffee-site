@@ -1,0 +1,159 @@
+body {
+  color: #3c3c3c;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*************   Create the menubar with two flex objects.  One to the set the icon and list on
+  oposite sides; another to create a flexible list of menu items. *********************************/
+nav  {
+  display: flex;
+  height: 70px;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #373737;
+  color: white;
+
+}
+
+.nav-links {
+  display: flex; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  display: flex;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: #aaaaaa;
+}
+
+.nav-item:hover a {
+  color: #373737;
+}
+
+/******* Create banner section with background image and headings on top *****/
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-image:url("../images/home_banner-x489.png"); 
+  background-size: cover;
+  color: white;
+  height: 650px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 61px;
+}
+.banner h1 {
+  display: flex;
+  font-family: 'Lobster', cursive;
+  text-shadow: 3px 3px 2px #474747;
+  margin: 0;
+}
+
+.content-one {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.tint > h2 {
+  font-size: 50px;
+  margin: 0;
+  padding: 20px;
+}
+
+.item-col > h4 {
+  font-size: 17px;
+  font-weight: 900;
+  margin: 10px;
+}
+
+.content-two a {
+  text-decoration: none;
+  color: darkred;
+  font-weight: 700;
+}
+.content-two a:hover {
+  color: darkblue;
+}
+
+.content-two > h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.item-coffee h4 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.content-three > h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.button {
+  background-color: rgb(231, 215, 66);
+  color: black;
+  border-radius: 7px;
+  padding: 20px;
+  font-weight: 900;
+  width: 250px;
+  margin: auto;
+}
+
+footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 40px
+}
+
+.tint > h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/**********       Create 3 column layout         ************/
+.triple-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  padding: 40px;
+  text-align: center;
+}
+
+/************* Create 4 column layout    ************************/
+.quad-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+
+/**************** create a verticle layout for mobile devices (smaller than 600px ).    *********/
+@media all and (max-width: 600px) {
+  .triple-col {
+   
+
+  }
+  .quad-col {
+
+  }
+  nav {
+ 
+  }
+  .nav-links {
+ 
+  }
+}
